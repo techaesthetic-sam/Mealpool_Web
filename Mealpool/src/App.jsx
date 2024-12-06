@@ -1,15 +1,25 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Navbar from "./Navbar";
+import About from "./screens/About";
+import People from "./screens/People";
+import Footer from "./Footer";
 import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1 className="text-xl font-bold underline">Hello world!</h1>
-    </>
+    <div class="p-[20px]">
+      <Navbar />
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/people" element={<People />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
