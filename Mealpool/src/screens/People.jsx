@@ -9,9 +9,12 @@ const People = () => {
     <div className="bg-gray-50  flex items-center justify-center font-sans">
       <div className="max-w-8xl rounded-lg p flex flex-col md:flex-row ">
         {/* Left */}
-        <div className="flex-1 font-sans font-bold leading-9">
+        <div
+          className="flex-1 font-sans font-bold leading-9
+        "
+        >
           {/* <h1 className="text-green-500 text-4xl font-bold mb-6">£llo</h1> */}
-          <img className="h-[70px] " src={Hello} />
+          <img className="h-[70px] mb-3 " src={Hello} />
           <p className="text-[#161421] text-[30px] text-bold  p-7">
             We are a bunch of people <br /> obsessed with all things <br />{" "}
             food! Two of us had <br /> startups in
