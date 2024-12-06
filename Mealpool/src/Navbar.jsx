@@ -1,7 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "./assets/media/logoM.png";
 export default function Navbar() {
+  const location = useLocation();
+  const isPeopleActive = location.pathname === "/people";
+
   return (
     <div class="flex justify-between font-sans pb-5">
       <div class="flex  gap-4 items-center">
@@ -17,8 +20,18 @@ export default function Navbar() {
           <span class="font-bold text-[18px]">&</span>
           <span class="text-[#04C92F] font-bold text-[18px]">Play Store</span>
         </div>
-        <div class="h-[34px] w-[149px] bg-[#EDEAEA] rounded-[17px] flex justify-center items-center  ">
-          <h5 class="text-[#9A9A9A] text-[18px] font-bold">Launching Jan</h5>
+        <div class="">
+          <h5 className="text-[#9A9A9A] text-[18px] font-bold">
+            {isPeopleActive ? (
+              <div class="h-[34px] w-[89px] bg-[#EDEAEA] rounded-[17px] flex justify-center items-center  ">
+                Beta
+              </div>
+            ) : (
+              <div class="h-[34px] w-[149px] bg-[#EDEAEA] rounded-[17px] flex justify-center items-center  ">
+                Launching Jan
+              </div>
+            )}
+          </h5>
         </div>
       </div>
       <div class="flex gap-8 items-center">
