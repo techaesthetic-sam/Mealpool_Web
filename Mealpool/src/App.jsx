@@ -4,7 +4,7 @@ import People from "./screens/People";
 import Footer from "./Footer";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+//test
 function App() {
   return (
     <div class=" m-[20px]">
