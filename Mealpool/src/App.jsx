@@ -3,12 +3,7 @@ import About from "./screens/About";
 import People from "./screens/People";
 import Footer from "./Footer";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
