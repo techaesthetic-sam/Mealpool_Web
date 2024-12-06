@@ -12,7 +12,7 @@ import {
 
 function App() {
   return (
-    <div class="p-[20px]">
+    <div class=" m-[20px]">
       <Navbar />
       <Routes>
         <Route path="/about" element={<About />} />
