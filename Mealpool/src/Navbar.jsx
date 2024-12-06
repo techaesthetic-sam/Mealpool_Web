@@ -25,7 +25,7 @@ export default function Navbar() {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "font-bold text-[#1E1C1C]" : "text-[#1E1C1C66]"
+            isActive ? "font-bold text-[#1E1C1C]" : "text-[#1E1C1C66] font-bold"
           }
         >
           About
@@ -33,13 +33,13 @@ export default function Navbar() {
         <NavLink
           to="/people"
           className={({ isActive }) =>
-            isActive ? "font-bold text-[#1E1C1C]" : "text-gray-600"
+            isActive ? "font-bold text-[#1E1C1C]" : "text-[#1E1C1C66] font-bold"
           }
         >
           People
         </NavLink>
         <div class="h-[34px] w-[108px] bg-[#1E1C1C] rounded-[9px] flex items-center justify-center ">
-          <h5 class="text-[#FFFFFF] text-[18px] ">Download</h5>
+          <h5 class="text-[#FFFFFF] text-[18px] font-bold">Download</h5>
         </div>
       </div>
     </div>
